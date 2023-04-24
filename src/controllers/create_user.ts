@@ -14,7 +14,6 @@ export default async function CreateUser(req: Request, res: Response){
         password: passwordHash,
         confirmPassword:passwordHash,
         token: uuidv4() 
-
     })
     if(name == ''){
         return res.status(401).json({ msg: 'fill in the name field' });
