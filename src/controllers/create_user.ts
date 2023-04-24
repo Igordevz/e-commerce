@@ -12,7 +12,7 @@ export default async function CreateUser(req: Request, res: Response){
         name, 
         email,
         password: passwordHash,
-        confirmPassword,
+        confirmPassword:passwordHash,
         token: uuidv4() 
 
     })
