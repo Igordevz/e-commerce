@@ -5,8 +5,9 @@ export interface ICardapio extends Document{
     title: string,
     cartegory: string,
     seller: string,
-    value: string,
+    ItemValue: string,
     description: string,
-    freight: string,
+    freight: String,
+    approved: boolean
     
 }
