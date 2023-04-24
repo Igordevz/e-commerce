@@ -7,9 +7,10 @@ const SchemaUser = new Schema<Iuser>({
     password: {type: String, required:true},
     confirmPassword: {type: String, required:true},
     email: {type: String, required: true},
-    cpf: {type: String, required:true},
-    carrinho: {type: [], required:true},
-    typePagement: {type: [], required:true}
+    cpf: {type: String},
+    location: {type: []},
+    carrinho: {type: []},
+    typePagement: {type: []}
 })
 
 export const UserModel = model<Iuser>('user', SchemaUser)

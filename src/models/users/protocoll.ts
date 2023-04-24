@@ -1,3 +1,5 @@
+import { Document } from "mongoose";
+
 export interface Iuser extends Document{
 
     name: string,
@@ -5,6 +7,7 @@ export interface Iuser extends Document{
     email: string,
     confirmPassword: string,
     cpf: string,
+    location: [],
     carrinho: [],
     typePagement: [],
 }
