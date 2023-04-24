@@ -7,6 +7,7 @@ export interface Iuser extends Document{
     email: string,
     confirmPassword: string,
     cpf: string,
+    token: string,
     location: [],
     carrinho: [],
     typePagement: [],
