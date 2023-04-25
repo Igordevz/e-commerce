@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { UserModel } from "../models/users/user";
 import bcrypt from 'bcrypt'
 import { v4 as uuidv4 } from 'uuid';
-export default async function CreateUser(req: Request, res: Response){
+export  async function CreateUser(req: Request, res: Response){
 
     const { name, email, password, confirmPassword  } = req.body
 
