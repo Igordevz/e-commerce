@@ -5,6 +5,7 @@ import { LoginUser } from "../controllers/login_user";
 import { AddNewCardapio } from "../controllers/cardapio";
 import Filter from "../controllers/filter";
 import { CartItem } from "../use-cases/cartItem";
+import { RemoveCart } from "../use-cases/removecard";
 
 export const router = Router();
 
@@ -18,3 +19,4 @@ router.post('/login_user', LoginUser)
 router.post('/create_cardapio', AddNewCardapio)
 router.post('/filter-user', Filter)
 router.post('/cart', CartItem)
+router.delete('/cart', RemoveCart)

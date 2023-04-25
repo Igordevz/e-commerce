@@ -29,6 +29,5 @@ export async function CartItem(req:Request, res:Response) {
   } catch (error:any) {
     return res.status(500).json({ error: error.message });
   }
-  
 
 }
