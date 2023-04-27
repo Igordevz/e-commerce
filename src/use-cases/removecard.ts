@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { CardapioModel } from "../models/cardapio/cardapio";
 import { UserModel } from "../models/users/user";
 
 export async function RemoveCart(req: Request, res: Response){
