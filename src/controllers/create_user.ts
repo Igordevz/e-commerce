@@ -13,7 +13,10 @@ export  async function CreateUser(req: Request, res: Response){
         email,
         password: passwordHash,
         confirmPassword:passwordHash,
-        token: uuidv4() 
+        token: uuidv4(), 
+        carrinho: {
+            msg: "seu carrinho esta vazio"
+           } 
     })
     if(name == ''){
         return res.status(401).json({ msg: 'fill in the name field' });
