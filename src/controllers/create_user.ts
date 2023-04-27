@@ -14,11 +14,6 @@ export  async function CreateUser(req: Request, res: Response){
         password: passwordHash,
         confirmPassword:passwordHash,
         token: uuidv4(), 
-        carrinho: [
-            {
-             msg: "seu carrinho esta vazio"
-            }
-         ],
          typePagement: [
             {
              msg: "Insira Um Metódo De Pagamento"
