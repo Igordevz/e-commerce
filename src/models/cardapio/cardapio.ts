@@ -9,6 +9,7 @@ export const SchemaCardapio = new Schema<ICardapio>({
     description: {type: String},
     freight: {type: String},
     approved: {type: Boolean}, 
+    ImgUrl: { type: String },
     ItemValue:  {type: String}
 
 })
