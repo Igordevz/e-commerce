@@ -6,6 +6,7 @@ import { AddNewCardapio } from "../controllers/cardapio";
 import Filter from "../controllers/filter";
 import { CartItem } from "../use-cases/cartItem";
 import { RemoveCart } from "../use-cases/removecard";
+import { PaymentStriper } from "../payments/payment.stripe";
 
 export const router = Router();
 
@@ -20,3 +21,7 @@ router.post('/create_cardapio', AddNewCardapio)
 router.post('/filter-user', Filter)
 router.post('/cart', CartItem)
 router.delete('/cart', RemoveCart)
+
+/// payment 
+
+router.post('/payments', PaymentStriper)
