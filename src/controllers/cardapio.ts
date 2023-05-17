@@ -3,9 +3,8 @@ import { CardapioModel } from "../models/cardapio/cardapio";
 
 export async function AddNewCardapio(req: Request, res: Response) {
 
-  const { title, cartegory, seller, ItemValue, description, freight } = req.body;
-
-
+    const { title, cartegory, seller, ItemValue, description, freight } = req.body;
+  
     const NewCardapio = new CardapioModel({
       title: title,
       cartegory: cartegory,
