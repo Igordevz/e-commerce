@@ -1,7 +1,7 @@
 import express from "express";
 import DbConect from "./database/mongodb";
-import * as dotenv from "dotenv";
 import { router } from "./routes/router";
+import * as dotenv from "dotenv";
 dotenv.config();
 
 async function Bootstrap() {
