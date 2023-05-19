@@ -10,7 +10,7 @@ export async function PaymentStriper(req: Request, res:Response){
     const session = await stripe.checkout.sessions.create({
         line_items: [
                 {
-                    price: "price_1N8lSsKAjEEu1q7wF5BIqd2r",
+                    price: productsId,
                     quantity: 1,
                 },
             ], 

@@ -24,4 +24,4 @@ router.delete('/cart', RemoveCart)
 
 /// payment 
 
-router.post('/payments', PaymentStriper)
+router.patch('/payments/:id', PaymentStriper)
