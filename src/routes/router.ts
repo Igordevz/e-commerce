@@ -11,7 +11,9 @@ import { PaymentStriper } from "../payments/payment.stripe";
 export const router = Router();
 
 router.get('/', (req, res) =>{
+
    return res.status(200).send('welcome the Api');
+   
 })
 
 router.post('/create_user', CreateUser)
